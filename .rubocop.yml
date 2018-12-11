@@ -1,0 +1,35 @@
+AllCops:
+  Exclude:
+    - db/**/*
+    - lib/tasks/**/*.rake
+    - Gemfile
+    - Gemfile.lock
+    - test/*
+    - bin/*
+    - config/**/*
+    - spec/*
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 190
+
+Metrics/MethodLength:
+  Max: 15
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Metrics/AbcSize:
+  # The ABC size is a calculated magnitude, so this number can be a Fixnum or
+  # a Float.
+  Max: 33
+
+
